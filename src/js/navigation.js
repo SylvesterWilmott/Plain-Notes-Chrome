@@ -42,8 +42,8 @@ function onDocumentKeydown (e) {
     e.preventDefault()
     search.focus()
     removeAllSelections()
-  } else if (e.key === 'Backspace' || e.key === 'Delete') {
-    deleteSelectedItem()
+  } else if ((e.key === 'Backspace' || e.key === 'Delete') && (e.metaKey || e.ctrlKey)) {
+    deleteSelectedItem();
   }
 }
 

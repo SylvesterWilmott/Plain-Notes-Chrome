@@ -27,6 +27,7 @@
   --neutral-quaternary: #EDEEF0; /* Neutral 94 */
   --separator: rgba(0, 0, 0, 0.07);
   --background: #ffffff;
+  --background-elevated: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,5 +53,6 @@
     --neutral-quaternary: #454749; /* Neutral 30 */
     --separator: rgba(255, 255, 255, 0.1);
     --background: #202124;
+    --background-elevated: #292A2D;
   }
 }

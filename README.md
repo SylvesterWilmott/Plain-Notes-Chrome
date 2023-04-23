@@ -21,6 +21,6 @@ Once installed, you can access the extension by clicking the icon in the Chrome 
 
 - Click `New Note`, a new tab will open with a blank note.
 - All edits are automatically saved in Chrome's local storage as you make changes.
-- Press the `Backspace` key while a note is selected in the extension popup to delete it.
+- Press `Command/Ctrl+Backspace` while a note is selected in the extension popup to delete it.
 - Access preferences by right-clicking the extension icon and selecting `Options`, or by using the editor context menu.
 - Create a new note from any selected text on the internet by right-clicking a passage and choosing `New Note from Text`.

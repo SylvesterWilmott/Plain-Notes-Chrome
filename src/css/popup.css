@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--background-elevated);
   width: 350px;
   overflow: auto;
   overscroll-behavior: none;
@@ -42,7 +42,6 @@ body {
 }
 
 .item.selected {
-  color: var(--on-secondary-container);
   background: var(--secondary-container);
 }
 
@@ -64,7 +63,7 @@ body {
 
 .item {
   color: var(--on-surface);
-  background: var(--background);
+  background: var(--background-elevated);
   height: auto;
   user-select: none;
   position: relative;
@@ -101,11 +100,6 @@ body {
 
 .input::placeholder {
   color: var(--neutral-tertiary);
-}
-
-#notesList li.selected:before,
-#actionList li.selected:before {
-  background-color: var(--on-secondary-container);
 }
 
 #notesList li:before {
