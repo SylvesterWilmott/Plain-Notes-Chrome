@@ -42,7 +42,7 @@ body {
 }
 
 .item.selected {
-  background: var(--surface-container-highest);
+  background: var(--neutral-quaternary);
 }
 
 .list {
