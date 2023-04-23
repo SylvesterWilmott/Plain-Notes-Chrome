@@ -54,6 +54,12 @@ function registerListeners () {
   for (const select of selects) {
     select.addEventListener('change', onSelectChanged)
   }
+
+  const buttons = document.querySelectorAll('button')
+
+  for (const button of buttons) {
+    button.addEventListener('click', onButtonClicked)
+  }
 }
 
 async function loadPreferences () {
@@ -120,5 +126,40 @@ async function onSelectChanged (e) {
   } catch (error) {
     console.error('An error occurred:', error)
     target.value = storage.defaults[targetId].status
+  }
+}
+
+async function onButtonClicked (e) {
+  const target = e.target
+  const targetId = target.id
+
+  if (targetId === 'export') {
+    const notes = await storage.load('notes', []).catch((error) => {
+      console.error('An error occurred:', error)
+    })
+
+    for (const note of notes) {
+      console.log(note)
+      const title = note.title.replace(/\s+/g, '_')
+      const created = new Date(note.created)
+      const date = created.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '_')
+      const filename = `${title}_${date}`
+      const content = note.text
+
+      // create a data URL from the file content
+      const dataURL = `data:text/plain;charset=utf-8,${encodeURIComponent(content)}`
+
+      // create a temporary anchor element to trigger the download
+      const link = document.createElement('a')
+      link.href = dataURL
+      link.download = filename
+
+      // append the anchor element to the document body and trigger a click event
+      document.body.appendChild(link)
+      link.click()
+
+      // remove the anchor element from the document body
+      document.body.removeChild(link)
+    }
   }
 }

@@ -55,7 +55,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 48px;
-  cursor: pointer;
   padding: 0 20px;
   border-bottom: 1px solid var(--separator);
 }
@@ -68,8 +67,19 @@ body {
   color: var(--on-surface);
   width: 100%;
   line-height: 48px;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
+}
+
+.action {
+  color: var(--primary);
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  text-align: left;
 }
 
 .switch {
@@ -77,6 +87,7 @@ body {
   display: inline-block;
   width: 32px;
   height: 20px;
+  cursor: pointer;
 }
 
 .switch input {
