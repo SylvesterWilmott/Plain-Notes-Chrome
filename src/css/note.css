@@ -7,8 +7,7 @@
 }
 
 ::selection {
-  color: var(--on-secondary-container);
-  background: var(--secondary-container);
+  background: var(--selection);
 }
 
 html,

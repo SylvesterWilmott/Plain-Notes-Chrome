@@ -28,6 +28,7 @@
   --separator: rgba(0, 0, 0, 0.07);
   --background: #ffffff;
   --background-elevated: #ffffff;
+  --selection: #C8E6FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,5 +55,6 @@
     --separator: rgba(255, 255, 255, 0.1);
     --background: #202124;
     --background-elevated: #292A2D;
+    --selection: #2A4657;
   }
 }
