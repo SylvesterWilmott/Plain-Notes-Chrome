@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Notas simples y sin complicaciones en formato de texto plano"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "Nueva Nota"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Buscar"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Sin título"
+  },
+  "OPTION_SORTING": {
+    "message": "Ordenar Notas Por"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Fecha de Creación"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Fecha de Modificación"
+  },
+  "SORT_TITLE": {
+    "message": "Título"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Corrector Ortográfico"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Cerrar automáticamente comillas y paréntesis"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Continuar automáticamente con listas"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "Nueva Nota desde Texto"
+  }
+}

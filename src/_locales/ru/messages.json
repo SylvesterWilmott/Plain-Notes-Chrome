@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Простые и непритязательные заметки в виде обычного текста"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "Новая заметка"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Поиск"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Без названия"
+  },
+  "OPTION_SORTING": {
+    "message": "Сортировать заметки по"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Дате создания"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Дате изменения"
+  },
+  "SORT_TITLE": {
+    "message": "Заголовку"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Проверка орфографии"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Автоматическое закрытие кавычек и скобок"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Автоматическое продолжение списков"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "Новая заметка из текста"
+  }
+}

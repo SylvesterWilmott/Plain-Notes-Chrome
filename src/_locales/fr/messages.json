@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Notes simples et sans complication en texte brut"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "Nouvelle note"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Rechercher"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Sans titre"
+  },
+  "OPTION_SORTING": {
+    "message": "Trier les notes par"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Date de création"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Date de modification"
+  },
+  "SORT_TITLE": {
+    "message": "Titre"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Vérification orthographique"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Fermer automatiquement les guillemets et les parenthèses"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Continuer automatiquement les listes"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "Nouvelle note à partir du texte"
+  }
+}

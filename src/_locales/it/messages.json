@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Note di testo semplici e senza complicazioni"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "Nuova nota"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Cerca"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Senza titolo"
+  },
+  "OPTION_SORTING": {
+    "message": "Ordina note per"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Data di creazione"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Data di modifica"
+  },
+  "SORT_TITLE": {
+    "message": "Titolo"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Correttore ortografico"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Chiudi automaticamente virgolette e parentesi"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Continua automaticamente elenchi puntati"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "Nuova nota da testo"
+  }
+}

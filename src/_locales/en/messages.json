@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Simple and uncomplicated, plain text notes"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "New Note"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Search"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Untitled"
+  },
+  "OPTION_SORTING": {
+    "message": "Sort Notes By"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Date Created"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Date Modified"
+  },
+  "SORT_TITLE": {
+    "message": "Title"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Spellcheck"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Automatically close quotes and brackets"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Automatically continue lists"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "New Note from Text"
+  }
+}

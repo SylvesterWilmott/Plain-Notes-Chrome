@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/options.css" />
+    <script type="module" src="../js/options.js"></script>
+  </head>
+  <body class="hidden">
+    <div class="container">
+      <div class="row-group">
+        <div class="row">
+          <label for="sorting" class="label" data-localize="OPTION_SORTING"></label>
+          <label class="select">
+            <select id="sorting">
+              <option value="created" data-localize="SORT_DATE_CREATED"></option>
+              <option value="modified" data-localize="SORT_DATE_MODIFIED"></option>
+              <option value="title" data-localize="SORT_TITLE"></option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label for="spellcheck" class="label" data-localize="OPTION_SPELLCHECK"></label>
+          <label class="switch">
+            <input type="checkbox" id="spellcheck">
+            <span class="track no-transition"></span>
+          </label>
+        </div>
+        <div class="row">
+          <label for="autoClosure" class="label" data-localize="OPTION_AUTO_CLOSURE"></label>
+          <label class="switch">
+            <input type="checkbox" id="autoClosure">
+            <span class="track no-transition"></span>
+          </label>
+        </div>
+        <div class="row">
+          <label for="autoList" class="label" data-localize="OPTIONS_AUTO_LIST"></label>
+          <label class="switch">
+            <input type="checkbox" id="autoList">
+            <span class="track no-transition"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

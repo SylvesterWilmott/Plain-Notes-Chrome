@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "シンプルで複雑でない、プレーンテキストのメモ"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "新しいノート"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "検索"
+  },
+  "UNTITLED_NOTE": {
+    "message": "無題"
+  },
+  "OPTION_SORTING": {
+    "message": "ノートの並べ替え"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "作成日"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "更新日"
+  },
+  "SORT_TITLE": {
+    "message": "タイトル"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "スペルチェック"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "引用符や括弧を自動的に閉じる"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "自動的にリストを続ける"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "テキストから新しいノートを作成"
+  }
+}

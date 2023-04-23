@@ -1,0 +1,44 @@
+{
+  "EXT_NAME": {
+    "message": "Plain Notes"
+  },
+  "EXT_NAME_SHORT": {
+    "message": "Plain Notes"
+  },
+  "EXT_DESCRIPTION": {
+    "message": "Einfache und unkomplizierte Notizen im Klartext"
+  },
+  "NEW_NOTE_BUTTON": {
+    "message": "Neue Notiz"
+  },
+  "SEARCHBAR_PLACEHOLDER": {
+    "message": "Suche"
+  },
+  "UNTITLED_NOTE": {
+    "message": "Ohne Titel"
+  },
+  "OPTION_SORTING": {
+    "message": "Sortieren nach"
+  },
+  "SORT_DATE_CREATED": {
+    "message": "Erstellungsdatum"
+  },
+  "SORT_DATE_MODIFIED": {
+    "message": "Änderungsdatum"
+  },
+  "SORT_TITLE": {
+    "message": "Titel"
+  },
+  "OPTION_SPELLCHECK": {
+    "message": "Rechtschreibprüfung"
+  },
+  "OPTION_AUTO_CLOSURE": {
+    "message": "Automatisches Schließen von Anführungszeichen und Klammern"
+  },
+  "OPTIONS_AUTO_LIST": {
+    "message": "Automatisches Fortsetzen von Listen"
+  },
+  "NEW_NOTE_MENU": {
+    "message": "Neue Notiz aus Text"
+  }
+}
