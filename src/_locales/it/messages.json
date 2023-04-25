@@ -33,10 +33,10 @@
     "message": "Correttore ortografico"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "Chiudi automaticamente virgolette e parentesi"
+    "message": "Completamento automatico di virgolette e parentesi"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "Continua automaticamente elenchi puntati"
+    "message": "Completamento automatico di elenchi"
   },
   "NEW_NOTE_MENU": {
     "message": "Nuova nota da testo"

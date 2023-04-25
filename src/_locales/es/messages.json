@@ -33,10 +33,10 @@
     "message": "Corrector Ortográfico"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "Cerrar automáticamente comillas y paréntesis"
+    "message": "Autocompletar comillas y corchetes"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "Continuar automáticamente con listas"
+    "message": "Autocompletar listas"
   },
   "NEW_NOTE_MENU": {
     "message": "Nueva Nota desde Texto"
