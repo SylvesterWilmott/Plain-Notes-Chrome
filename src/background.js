@@ -7,6 +7,7 @@ import * as menu from './js/menu.js'
 import * as uid from './js/uid.js'
 
 chrome.runtime.onInstalled.addListener(init)
+chrome.runtime.onStartup.addListener(loadPreferences)
 chrome.contextMenus.onClicked.addListener(onMenuClick)
 chrome.storage.onChanged.addListener(onStorageChanged)
 
@@ -95,7 +96,14 @@ async function onMenuClick (info) {
       console.error('An error occurred:', error)
     }
   } else if (info.menuItemId === 'newNote') {
-    const noteContent = info.selectionText + '\n\n\u2014 ' + info.pageUrl
+    if (!info.selectionText) return
+
+    let noteContent = info.selectionText
+
+    if (pageUrl) {
+      noteContent += `\n\n\u2014 ${info.pageUrl}`
+    }
+
     try {
       await createNewNote(noteContent)
     } catch (error) {
