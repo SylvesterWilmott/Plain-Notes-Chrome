@@ -33,10 +33,10 @@
     "message": "Spellcheck"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "Automatically close quotes and brackets"
+    "message": "Autocomplete quotes and brackets"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "Automatically continue lists"
+    "message": "Autocomplete lists"
   },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Export Notes"

@@ -33,10 +33,10 @@
     "message": "Rechtschreibprüfung"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "Automatisches Schließen von Anführungszeichen und Klammern"
+    "message": "Anführungszeichen und Klammern automatisch vervollständigen"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "Automatisches Fortsetzen von Listen"
+    "message": "Listen automatisch vervollständigen"
   },
   "NEW_NOTE_MENU": {
     "message": "Neue Notiz aus Text"

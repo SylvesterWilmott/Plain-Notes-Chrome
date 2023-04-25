@@ -33,10 +33,10 @@
     "message": "スペルチェック"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "引用符や括弧を自動的に閉じる"
+    "message": "引用符や括弧の自動補完"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "自動的にリストを続ける"
+    "message": "リストの自動補完"
   },
   "NEW_NOTE_MENU": {
     "message": "テキストから新しいノートを作成"

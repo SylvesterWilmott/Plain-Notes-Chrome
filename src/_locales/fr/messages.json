@@ -33,10 +33,10 @@
     "message": "Vérification orthographique"
   },
   "OPTION_AUTO_CLOSURE": {
-    "message": "Fermer automatiquement les guillemets et les parenthèses"
+    "message": "Autocompléter les guillemets et les crochets"
   },
   "OPTIONS_AUTO_LIST": {
-    "message": "Continuer automatiquement les listes"
+    "message": "Autocompléter les listes"
   },
   "NEW_NOTE_MENU": {
     "message": "Nouvelle note à partir du texte"
