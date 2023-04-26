@@ -38,6 +38,9 @@
   "OPTIONS_AUTO_LIST": {
     "message": "リストの自動補完"
   },
+  "OPTIONS_EXPORT_NOTES": {
+    "message": "メモのエクスポート"
+  },
   "NEW_NOTE_MENU": {
     "message": "テキストから新しいノートを作成"
   }

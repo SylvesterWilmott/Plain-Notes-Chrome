@@ -38,6 +38,9 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Completamento automatico di elenchi"
   },
+  "OPTIONS_EXPORT_NOTES": {
+    "message": "Esporta note"
+  },
   "NEW_NOTE_MENU": {
     "message": "Nuova nota da testo"
   }

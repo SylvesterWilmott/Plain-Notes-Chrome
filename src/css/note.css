@@ -35,6 +35,7 @@ body {
   height: 100vh;
   width: 100vw;
   cursor: text;
+  tab-size: 4;
 }
 
 .hidden {
