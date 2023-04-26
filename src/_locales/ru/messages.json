@@ -38,6 +38,9 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Автозавершение списков"
   },
+  "OPTIONS_EXPORT_NOTES": {
+    "message": "Экспорт заметок"
+  },
   "NEW_NOTE_MENU": {
     "message": "Новая заметка из текста"
   }

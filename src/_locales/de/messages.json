@@ -38,6 +38,9 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Listen automatisch vervollständigen"
   },
+  "OPTIONS_EXPORT_NOTES": {
+    "message": "Notizen exportieren"
+  },
   "NEW_NOTE_MENU": {
     "message": "Neue Notiz aus Text"
   }
