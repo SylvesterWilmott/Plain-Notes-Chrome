@@ -7,54 +7,54 @@
     "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
     "Courier New", monospace;
-  --primary: #00658F;
+  --primary: #00629F;
   --on-primary: #ffffff;
-  --primary-container: #C8E6FF;
-  --on-primary-container: #001E2E;
-  --secondary: #4F616E;
-  --primary-fixed-dim: #87CEFF;
+  --primary-container: #D0E4FF;
+  --on-primary-container: #001D34;
+  --secondary: #526070;
+  --primary-fixed-dim: #9ACBFF;
   --on-secondary: #ffffff;
-  --secondary-container: #D2E5F5;
-  --on-secondary-container: #0B1D29;
+  --secondary-container: #D6E4F7;
+  --on-secondary-container: #0F1D2A;
   --surface: #F9F9FC;
-  --surface-container-highest: #E2E2E5;
-  --on-surface: #191C1E;
-  --on-surface-variant: #41484D;
-  --outline: #71787E;
+  --surface-container-highest: #E2E2E6;
+  --on-surface: #1A1C1E;
+  --on-surface-variant: #42474E;
+  --outline: #73777F;
   --neutral-primary: #0C0E11; /* Neutral 4 */
-  --neutral-secondary: #75777A; /* Neutral 50 */
-  --neutral-tertiary: #C5C6C9; /* Neutral 80 */
-  --neutral-quaternary: #EDEEF0; /* Neutral 94 */
+  --neutral-secondary: #76777A; /* Neutral 50 */
+  --neutral-tertiary: #C6C6CA; /* Neutral 80 */
+  --neutral-quaternary: #EEEDF1; /* Neutral 94 */
   --separator: rgba(0, 0, 0, 0.07);
   --background: #ffffff;
   --background-elevated: #ffffff;
-  --selection: #C8E6FF;
+  --selection: #D0E4FF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --primary: #87CEFF;
-    --on-primary: #00344D;
-    --primary-container: #004C6D;
-    --on-primary-container: #C8E6FF;
-    --secondary: #B7C9D8;
-    --primary-fixed-dim: #87CEFF;
-    --on-secondary: #21323E;
-    --secondary-container: #384956;
-    --on-secondary-container: #D2E5F5;
-    --surface: #37393C; /* Surface bright */
-    --surface-container-highest: #333537;
-    --on-surface: #C5C6C9;
-    --on-surface-variant: #C1C7CE;
-    --outline: #8B9198;
-    --neutral-primary: #EDEEF0; /* Neutral 94 */
+    --primary: #9ACBFF;
+    --on-primary: #003355;
+    --primary-container: #004A79;
+    --on-primary-container: #D0E4FF;
+    --secondary: #BAC8DA;
+    --primary-fixed-dim: #9ACBFF;
+    --on-secondary: #243240;
+    --secondary-container: #3B4857;
+    --on-secondary-container: #D6E4F7;
+    --surface: #38393C; /* Surface bright */
+    --surface-container-highest: #333538;
+    --on-surface: #C6C6CA;
+    --on-surface-variant: #C2C7CF;
+    --outline: #8C9199;
+    --neutral-primary: #EEEDF1; /* Neutral 94 */
     --neutral-secondary: #AAABAE; /* Neutral 70 */
     --neutral-tertiary: #5D5E61; /* Neutral 40 */
-    --neutral-quaternary: #454749; /* Neutral 30 */
+    --neutral-quaternary: #45474A; /* Neutral 30 */
     --separator: rgba(255, 255, 255, 0.1);
     --background: #202124;
     --background-elevated: #292A2D;
-    --selection: #2A4657;
+    --selection: #384350;
   }
 }
