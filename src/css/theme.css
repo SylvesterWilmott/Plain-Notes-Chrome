@@ -7,54 +7,54 @@
     "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
     "Courier New", monospace;
-  --primary: #005CBB;
+  --primary: #824790;
   --on-primary: #ffffff;
-  --primary-container: #D7E3FF;
-  --on-primary-container: #001B3F;
-  --secondary: #565E71;
-  --primary-fixed-dim: #ABC7FF;
+  --primary-container: #FCD7FF;
+  --on-primary-container: #340042;
+  --secondary: #6A596C;
+  --primary-fixed-dim: #F3AFFF;
   --on-secondary: #ffffff;
-  --secondary-container: #DAE2F9;
-  --on-secondary-container: #131C2B;
-  --surface: #FAF9FD;
-  --surface-container-highest: #E3E2E6;
-  --on-surface: #1A1B1F;
-  --on-surface-variant: #44474E;
-  --outline: #74777F;
-  --neutral-primary: #0D0E11; /* Neutral 4 */
-  --neutral-secondary: #77777A; /* Neutral 50 */
-  --neutral-tertiary: #C7C6CA; /* Neutral 80 */
-  --neutral-quaternary: #EFEDF1; /* Neutral 94 */
+  --secondary-container: #F3DBF2;
+  --on-secondary-container: #241727;
+  --surface: #FFF7FB;
+  --surface-container-highest: #E8E0E5;
+  --on-surface: #1E1B1E;
+  --on-surface-variant: #4C444C;
+  --outline: #7E747D;
+  --neutral-primary: #100D10; /* Neutral 4 */
+  --neutral-secondary: #7B7579; /* Neutral 50 */
+  --neutral-tertiary: #CCC4C9; /* Neutral 80 */
+  --neutral-quaternary: #F4ECF0; /* Neutral 94 */
   --separator: rgba(0, 0, 0, 0.07);
   --background: #ffffff;
   --background-elevated: #ffffff;
-  --selection: #D7E3FF;
+  --selection: #F2E4EF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --primary: #ABC7FF;
-    --on-primary: #002F65;
-    --primary-container: #00458F;
-    --on-primary-container: #D7E3FF;
-    --secondary: #BEC6DC;
-    --primary-fixed-dim: #ABC7FF;
-    --on-secondary: #283041;
-    --secondary-container: #3E4759;
-    --on-secondary-container: #DAE2F9;
-    --surface: #38393C; /* Surface bright */
-    --surface-container-highest: #343538;
-    --on-surface: #C7C6CA;
-    --on-surface-variant: #C4C6D0;
-    --outline: #8E9099;
-    --neutral-primary: #EFEDF1; /* Neutral 94 */
-    --neutral-secondary: #ABABAF; /* Neutral 70 */
-    --neutral-tertiary: #5E5E62; /* Neutral 40 */
-    --neutral-quaternary: #46464A; /* Neutral 30 */
+    --primary: #F3AFFF;
+    --on-primary: #4E155E;
+    --primary-container: #682E77;
+    --on-primary-container: #FCD7FF;
+    --secondary: #D6C0D6;
+    --primary-fixed-dim: #F3AFFF;
+    --on-secondary: #3A2B3C;
+    --secondary-container: #524154;
+    --on-secondary-container: #F3DBF2;
+    --surface: #3C383B; /* Surface bright */
+    --surface-container-highest: #383437;
+    --on-surface: #CCC4C9;
+    --on-surface-variant: #CFC3CD;
+    --outline: #988E97;
+    --neutral-primary: #F4ECF0; /* Neutral 94 */
+    --neutral-secondary: #B0A9AD; /* Neutral 70 */
+    --neutral-tertiary: #625D61; /* Neutral 40 */
+    --neutral-quaternary: #4A4549; /* Neutral 30 */
     --separator: rgba(255, 255, 255, 0.1);
     --background: #202124;
     --background-elevated: #292A2D;
-    --selection: #323D50;
+    --selection: #403645;
   }
 }
