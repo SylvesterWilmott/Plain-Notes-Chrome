@@ -104,7 +104,7 @@ const onEditorInput = debounce(async function () {
 
     if (title !== noteData.title) {
       noteData.title = title
-      document.title = title
+      document.title = text.length ? title : chrome.i18n.getMessage('UNTITLED_NOTE')
     }
   } else {
     noteData = {
@@ -116,7 +116,7 @@ const onEditorInput = debounce(async function () {
       caret: caretPos
     }
     storedNotes.unshift(noteData)
-    document.title = title
+    document.title = text.length ? title : chrome.i18n.getMessage('UNTITLED_NOTE')
   }
 
   try {
