@@ -203,13 +203,6 @@ async function onStorageChanged (changes) {
 
   if (changes.preferences) {
     loadPreferences()
-
-    // const { newValue, oldValue } = changes.preferences
-    // const spellcheck = newValue?.spellcheck.status
-
-    // if (typeof spellcheck === 'boolean' && (!oldValue || oldValue.spellcheck.status !== newValue.spellcheck.status)) {
-    //  editor.spellcheck = newValue.spellcheck.status
-    // }
   }
 }
 
