@@ -94,21 +94,19 @@ async function loadPreferences () {
   }
 }
 
-async function onMenuClick (info) {
-  if (info.menuItemId === 'spellcheck' ||
-      info.menuItemId === 'autoClosure' ||
-      info.menuItemId === 'autoList') {
+async function onMenuClick(info) {
+  const menuItemIds = ['spellcheck', 'autoClosure', 'autoList', 'predictive']
+  
+  if (menuItemIds.includes(info.menuItemId)) {
     try {
       await updateStoredPreferences(info)
     } catch (error) {
       console.error('An error occurred:', error)
     }
-  } else if (info.menuItemId === 'newNote') {
-    if (!info.selectionText) return
-
+  } else if (info.menuItemId === 'newNote' && info.selectionText) {
     let noteContent = info.selectionText
 
-    if (pageUrl) {
+    if (info.pageUrl) {
       noteContent += `\n\n\u2014 ${info.pageUrl}`
     }
 
