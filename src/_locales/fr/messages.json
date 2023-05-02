@@ -33,7 +33,7 @@
     "message": "Vérification orthographique"
   },
   "OPTION_PREDICTIVE": {
-    "message": "Texte prédictif"
+    "message": "Suggestions prédictives"
   },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocompléter les guillemets et les crochets"

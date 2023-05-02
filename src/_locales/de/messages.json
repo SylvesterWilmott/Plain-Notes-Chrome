@@ -33,7 +33,7 @@
     "message": "Rechtschreibprüfung"
   },
   "OPTION_PREDICTIVE": {
-    "message": "Vorhersagender Text"
+    "message": "Vorhersagevorschläge"
   },
   "OPTION_AUTO_CLOSURE": {
     "message": "Anführungszeichen und Klammern automatisch vervollständigen"

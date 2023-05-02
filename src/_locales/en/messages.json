@@ -33,7 +33,7 @@
     "message": "Spellcheck"
   },
   "OPTION_PREDICTIVE": {
-    "message": "Predictive Text"
+    "message": "Predictive Suggestions"
   },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocomplete quotes and brackets"

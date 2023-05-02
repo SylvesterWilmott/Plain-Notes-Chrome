@@ -33,7 +33,7 @@
     "message": "Corrector Ortográfico"
   },
   "OPTION_PREDICTIVE": {
-    "message": "Texto predictivo"
+    "message": "Sugerencias predictivas"
   },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocompletar comillas y corchetes"

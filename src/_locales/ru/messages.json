@@ -33,7 +33,7 @@
     "message": "Проверка орфографии"
   },
   "OPTION_PREDICTIVE": {
-    "message": "Предиктивный текст"
+    "message": "Предиктивные предложения"
   },
   "OPTION_AUTO_CLOSURE": {
     "message": "Автозавершение кавычек и скобок"
