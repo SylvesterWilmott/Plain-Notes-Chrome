@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Correttore ortografico"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Testo predittivo"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Completamento automatico di virgolette e parentesi"
   },

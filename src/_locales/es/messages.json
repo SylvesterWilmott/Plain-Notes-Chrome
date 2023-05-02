@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Corrector Ortográfico"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Texto predictivo"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocompletar comillas y corchetes"
   },

@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Проверка орфографии"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Предиктивный текст"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Автозавершение кавычек и скобок"
   },

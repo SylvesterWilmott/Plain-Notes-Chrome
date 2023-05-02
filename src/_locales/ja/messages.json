@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "スペルチェック"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "予測変換"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "引用符や括弧の自動補完"
   },

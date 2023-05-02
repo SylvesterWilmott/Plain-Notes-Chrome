@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Vérification orthographique"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Texte prédictif"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocompléter les guillemets et les crochets"
   },

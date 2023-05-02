@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Spellcheck"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Predictive Text"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Autocomplete quotes and brackets"
   },

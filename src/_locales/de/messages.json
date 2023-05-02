@@ -32,6 +32,9 @@
   "OPTION_SPELLCHECK": {
     "message": "Rechtschreibprüfung"
   },
+  "OPTION_PREDICTIVE": {
+    "message": "Vorhersagender Text"
+  },
   "OPTION_AUTO_CLOSURE": {
     "message": "Anführungszeichen und Klammern automatisch vervollständigen"
   },
