@@ -271,6 +271,14 @@ function handleTab (e) {
 
   if (predictedWord && predictedWord.length) {
     insertNode(predictedWord)
+  } else if (e.shiftKey) {
+    const editor = e.target
+    const start = editor.selectionStart
+    if (start > 0 && editor.value.charAt(start - 1) === '\t') {
+      deleteNode(1)
+    }
+  } else {
+    insertNode('\t')
   }
 }
 
