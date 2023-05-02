@@ -94,9 +94,9 @@ async function loadPreferences () {
   }
 }
 
-async function onMenuClick(info) {
+async function onMenuClick (info) {
   const menuItemIds = ['spellcheck', 'autoClosure', 'autoList', 'predictive']
-  
+
   if (menuItemIds.includes(info.menuItemId)) {
     try {
       await updateStoredPreferences(info)
