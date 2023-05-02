@@ -5,20 +5,21 @@
 import * as storage from './js/storage.js'
 import * as menu from './js/menu.js'
 import * as uid from './js/uid.js'
+import * as prediction from "./js/prediction.js"
 
 chrome.runtime.onInstalled.addListener(init)
 chrome.runtime.onStartup.addListener(loadPreferences)
 chrome.contextMenus.onClicked.addListener(onMenuClick)
 chrome.storage.onChanged.addListener(onStorageChanged)
+chrome.runtime.onMessage.addListener(onMessageReceived)
 
 async function init () {
   try {
     await setupContextMenu()
+    await loadPreferences()
   } catch (error) {
     console.error('An error occurred:', error)
   }
-
-  loadPreferences()
 }
 
 async function setupContextMenu () {
@@ -29,6 +30,13 @@ async function setupContextMenu () {
       title: chrome.i18n.getMessage('OPTION_SPELLCHECK'),
       contexts: ['editable'],
       id: 'spellcheck',
+      documentUrlPatterns: [`${tabUrl}*`],
+      type: 'checkbox'
+    },
+    {
+      title: chrome.i18n.getMessage('OPTION_PREDICTIVE'),
+      contexts: ['editable'],
+      id: 'predictive',
       documentUrlPatterns: [`${tabUrl}*`],
       type: 'checkbox'
     },
@@ -164,5 +172,13 @@ async function createNewNote (noteContent) {
     await storage.save('notes', storedNotes)
   } catch (error) {
     console.error('An error occurred:', error)
+  }
+}
+
+function onMessageReceived(message, sender, sendResponse) {
+  if (message.msg === 'predictive') {
+    const n = 2;
+    const predictiveModel = prediction.getModel(message.text, n);
+    sendResponse(predictiveModel)
   }
 }

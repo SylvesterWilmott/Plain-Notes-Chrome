@@ -5,6 +5,7 @@
 export const preferenceDefaults = {
   sorting: { status: 'created', type: 'select' },
   spellcheck: { status: false, type: 'checkbox' },
+  predictive: { status: true, type: 'checkbox' },
   autoClosure: { status: true, type: 'checkbox' },
   autoList: { status: true, type: 'checkbox' }
 }

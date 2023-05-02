@@ -34,13 +34,15 @@
 
 html,
 body {
-  overflow: hidden;
   background-color: var(--background);
 }
 
 body {
   transition: opacity 0.4s;
   opacity: 1;
+  overscroll-behavior: none;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .editor {
@@ -52,16 +54,28 @@ body {
   outline: none;
   font-family: var(--font-mono);
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.8125;
   padding: 64px calc((100% - 880px) / 2);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  height: auto;
   cursor: text;
   tab-size: 4;
+  overflow: hidden;
 }
 
 .hidden {
   opacity: 0;
+}
+
+.prediction {
+  color: var(--neutral-tertiary);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.8125;
+  position: absolute;
+  pointer-events: none;
+  white-space: pre-wrap;
 }
 
 @media only screen and (max-width: 960px) {
