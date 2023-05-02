@@ -42,6 +42,12 @@ async function loadPreferences () {
   if (storedPreferences.spellcheck.status) {
     editor.spellcheck = true
   }
+
+  // Update predictive element
+  if (!storedPreferences.predictive.status) {
+    const predictionEl = document.getElementById('prediction')
+    predictionEl.innerText = ''
+  }
 }
 
 function registerListeners () {
@@ -477,9 +483,10 @@ function positionElementNextToCaret (el) {
 }
 
 function getCaretPosition (el) {
+  const editor = document.getElementById('editor')
   const div = document.createElement('div')
   const span = document.createElement('span')
-  const editorStyles = getComputedStyle(el)
+  const editorStyles = window.getComputedStyle(el)
 
   for (const s of editorStyles) {
     div.style[s] = editorStyles[s]
@@ -513,7 +520,7 @@ function isCaretAtEndOfLine () {
   return lineStart + lineText.length === selectionStart
 }
 
-const throttledOnWindowResize = throttle(onWindowResize, 100)
+const throttledOnWindowResize = throttle(onWindowResize, 1)
 
 function onWindowResize () {
   const predictionEl = document.getElementById('prediction')
