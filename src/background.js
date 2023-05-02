@@ -177,7 +177,7 @@ async function createNewNote (noteContent) {
 
 function onMessageReceived(message, sender, sendResponse) {
   if (message.msg === 'predictive') {
-    const n = 2;
+    const n = 3;
     const predictiveModel = prediction.getModel(message.text, n);
     sendResponse(predictiveModel)
   }

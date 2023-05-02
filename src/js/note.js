@@ -266,14 +266,6 @@ function handleTab(e) {
 
   if (predictedWord && predictedWord.length) {
     insertNode(predictedWord);
-  } else if (e.shiftKey) {
-    const editor = e.target;
-    const start = editor.selectionStart;
-    if (start > 0 && editor.value.charAt(start - 1) === "\t") {
-      deleteNode(1);
-    }
-  } else {
-    insertNode("\t");
   }
 }
 
@@ -471,12 +463,10 @@ function handleAutocomplete(e) {
   )
     return;
 
-  const allPredictions = prediction.predict(word.word, predictiveModel);
+  const nextWord = prediction.predict(word.word, predictiveModel)[0];
 
-  if (!allPredictions || allPredictions.length === 0) {
-    return;
-  } else {
-    predictionEl.innerText = ` ${allPredictions[0].word}`;
+  if (nextWord && nextWord.length) {
+    predictionEl.innerText = ` ${nextWord}`;
     positionElementNextToCaret(predictionEl)
   }
 }

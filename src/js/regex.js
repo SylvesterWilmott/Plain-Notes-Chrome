@@ -6,3 +6,4 @@ export const CL_REGEX = /^((\t*- ?\[x? ?\]) {1,})(.+)?$/gm
 export const WORD_REGEX = /\w/g
 export const WHITESPACE_REGEX = /\s/g
 export const CHARACTER_REGEX = /[a-z0-9]/gi
+export const TOKEN_REGEX = /\b[\w'-]+\b/g
