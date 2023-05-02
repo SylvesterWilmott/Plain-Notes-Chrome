@@ -5,7 +5,7 @@
 import * as storage from './js/storage.js'
 import * as menu from './js/menu.js'
 import * as uid from './js/uid.js'
-import * as prediction from "./js/prediction.js"
+import * as prediction from './js/prediction.js'
 
 chrome.runtime.onInstalled.addListener(init)
 chrome.runtime.onStartup.addListener(loadPreferences)
@@ -175,10 +175,10 @@ async function createNewNote (noteContent) {
   }
 }
 
-function onMessageReceived(message, sender, sendResponse) {
+function onMessageReceived (message, sender, sendResponse) {
   if (message.msg === 'predictive') {
-    const n = 3;
-    const predictiveModel = prediction.getModel(message.text, n);
+    const n = 3
+    const predictiveModel = prediction.getModel(message.text, n)
     sendResponse(predictiveModel)
   }
 }
