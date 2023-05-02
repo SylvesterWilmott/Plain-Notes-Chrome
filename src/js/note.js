@@ -57,7 +57,7 @@ function registerListeners () {
   on('editor', 'input', onEditorInput)
   on('editor', 'keydown', onEditorKeydown)
   on('editor', 'contextmenu', onEditorContextMenu)
-  on(window, 'resize', throttledOnWindowResize)
+  on(window, 'resize', onWindowResize)
 
   chrome.storage.onChanged.addListener(onStorageChanged)
 }
@@ -528,26 +528,11 @@ function isCaretAtEndOfLine () {
   return lineStart + lineText.length === selectionStart
 }
 
-const throttledOnWindowResize = throttle(onWindowResize, 1)
-
 function onWindowResize () {
   const predictionEl = document.getElementById('prediction')
   const predictionText = predictionEl.innerText
 
   if (predictionText && predictionText.length) {
     positionElementNextToCaret(predictionEl)
-  }
-}
-
-function throttle (func, delay) {
-  let lastExecTime = 0
-  return function () {
-    const context = this
-    const args = arguments
-    const now = Date.now()
-    if (now - lastExecTime >= delay) {
-      lastExecTime = now
-      func.apply(context, args)
-    }
   }
 }
