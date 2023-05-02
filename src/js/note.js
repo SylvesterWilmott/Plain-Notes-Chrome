@@ -57,6 +57,7 @@ function registerListeners () {
   on('editor', 'input', onEditorInput)
   on('editor', 'keydown', onEditorKeydown)
   on('editor', 'contextmenu', onEditorContextMenu)
+  on('editor', 'click', onCaretPositionMove)
   on(window, 'resize', onWindowResize)
 
   chrome.storage.onChanged.addListener(onStorageChanged)
@@ -210,7 +211,11 @@ function onEditorKeydown (e) {
   const key = e.key
 
   const keyHandlers = {
-    Tab: handleTab
+    Tab: handleTab,
+    ArrowUp: handleArrows,
+    ArrowRight: handleArrows,
+    ArrowDown: handleArrows,
+    ArrowLeft: handleArrows
   }
 
   const autoClosureHandlers = {
@@ -254,6 +259,10 @@ function deleteNode (times) {
   for (let i = 0; i < times; i++) {
     document.execCommand('delete')
   }
+}
+
+function handleArrows (e) {
+  handleAutocomplete(e)
 }
 
 function handleTab (e) {
@@ -528,4 +537,8 @@ function onWindowResize () {
   if (predictionText && predictionText.length) {
     positionElementNextToCaret(predictionEl)
   }
+}
+
+function onCaretPositionMove (e) {
+  handleAutocomplete(e)
 }
