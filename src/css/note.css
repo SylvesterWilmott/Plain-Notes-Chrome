@@ -43,6 +43,7 @@ body {
   overscroll-behavior: none;
   overflow-y: auto;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 .editor {
@@ -56,7 +57,7 @@ body {
   font-size: 16px;
   line-height: 1.8125;
   padding: 64px calc((100% - 880px) / 2);
-  min-height: 100vh;
+  min-height: 100%;
   width: 100vw;
   height: auto;
   cursor: text;
