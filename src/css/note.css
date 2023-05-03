@@ -36,6 +36,8 @@ html,
 body {
   overflow: hidden;
   background-color: var(--background);
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -54,8 +56,8 @@ body {
   font-size: 16px;
   line-height: 1.8;
   padding: 64px calc((100% - 880px) / 2);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   cursor: text;
   tab-size: 4;
 }
