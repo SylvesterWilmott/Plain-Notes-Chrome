@@ -17,14 +17,13 @@ async function init () {
   noteId = getNoteIdFromUrl()
 
   try {
-    await Promise.all([loadNote(), loadPreferences()])
+    await Promise.all([loadNote(), loadPreferences(), populatePredictiveModel()])
   } catch (error) {
     console.error('An error occurred:', error)
   }
 
   autoSizeEditor()
   registerListeners()
-  populatePredictiveModel()
 
   document.body.classList.remove('hidden')
 }
@@ -96,10 +95,9 @@ function getNoteIdFromUrl () {
 }
 
 function onEditorInput (e) {
-  autoSizeEditor()
   handleAutocomplete(e)
+  autoSizeEditor()
   debounceOnEditorInput(e)
-  populatePredictiveModel()
 }
 
 function autoSizeEditor () {
@@ -119,7 +117,7 @@ function autoSizeEditor () {
   }
 }
 
-const populatePredictiveModel = debounce(async function (e) {
+async function populatePredictiveModel() {
   const editor = document.getElementById('editor')
   const text = editor.value
 
@@ -128,7 +126,7 @@ const populatePredictiveModel = debounce(async function (e) {
   } catch (error) {
     console.error('An error occurred:', error)
   }
-}, 500)
+}
 
 const debounceOnEditorInput = debounce(async function (e) {
   const storedNotes = await storage.load('notes', []).catch((error) => {
@@ -172,7 +170,7 @@ const debounceOnEditorInput = debounce(async function (e) {
   }
 
   try {
-    await storage.save('notes', storedNotes)
+    await Promise.all([storage.save('notes', storedNotes), populatePredictiveModel()])
   } catch (error) {
     console.error('An error occurred:', error)
   }
