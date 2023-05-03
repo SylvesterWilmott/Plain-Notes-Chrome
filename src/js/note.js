@@ -124,20 +124,19 @@ const onEditorInput = debounce(async function () {
   }
 }, 500)
 
-function debounce(func, delay) {
-  let timerId;
-  return async function() {
-    const context = this;
-    const args = arguments;
-    clearTimeout(timerId);
+function debounce (func, delay) {
+  let timerId
+  return async function () {
+    const context = this
+    const args = arguments
+    clearTimeout(timerId)
     return new Promise((resolve) => {
       timerId = setTimeout(() => {
-        resolve(func.apply(context, args));
-      }, delay);
-    });
-  };
+        resolve(func.apply(context, args))
+      }, delay)
+    })
+  }
 }
-
 
 async function onStorageChanged (changes) {
   const editor = document.getElementById('editor')

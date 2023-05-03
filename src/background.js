@@ -100,7 +100,7 @@ async function onMenuClick (info) {
 
     let noteContent = info.selectionText
 
-    if (pageUrl) {
+    if (info.pageUrl) {
       noteContent += `\n\n\u2014 ${info.pageUrl}`
     }
 

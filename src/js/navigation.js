@@ -43,7 +43,7 @@ function onDocumentKeydown (e) {
     search.focus()
     removeAllSelections()
   } else if ((e.key === 'Backspace' || e.key === 'Delete') && (e.metaKey || e.ctrlKey)) {
-    deleteSelectedItem();
+    deleteSelectedItem()
   }
 }
 
