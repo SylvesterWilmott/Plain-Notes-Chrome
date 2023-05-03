@@ -34,9 +34,7 @@ async function loadPreferences () {
   const editor = document.getElementById('editor')
 
   // Update spellcheck status
-  if (storedPreferences.spellcheck.status) {
-    editor.spellcheck = true
-  }
+  editor.spellcheck = storedPreferences.spellcheck.status
 }
 
 function registerListeners () {
@@ -126,15 +124,20 @@ const onEditorInput = debounce(async function () {
   }
 }, 500)
 
-function debounce (func, delay) {
-  let timerId
-  return function () {
-    const context = this
-    const args = arguments
-    clearTimeout(timerId)
-    timerId = setTimeout(() => func.apply(context, args), delay)
-  }
+function debounce(func, delay) {
+  let timerId;
+  return async function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timerId);
+    return new Promise((resolve) => {
+      timerId = setTimeout(() => {
+        resolve(func.apply(context, args));
+      }, delay);
+    });
+  };
 }
+
 
 async function onStorageChanged (changes) {
   const editor = document.getElementById('editor')
@@ -152,13 +155,6 @@ async function onStorageChanged (changes) {
 
   if (changes.preferences) {
     loadPreferences()
-
-    // const { newValue, oldValue } = changes.preferences
-    // const spellcheck = newValue?.spellcheck.status
-
-    // if (typeof spellcheck === 'boolean' && (!oldValue || oldValue.spellcheck.status !== newValue.spellcheck.status)) {
-    //  editor.spellcheck = newValue.spellcheck.status
-    // }
   }
 }
 
