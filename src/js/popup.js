@@ -12,14 +12,13 @@ document.addEventListener('DOMContentLoaded', init)
 
 async function init () {
   try {
-    await loadNotes()
+    await Promise.all([loadNotes(), i18n.localize()])
   } catch (error) {
     console.error('An error occurred:', error)
   }
 
   navigation.init()
   registerListeners()
-  i18n.localize()
   readyApp()
 }
 

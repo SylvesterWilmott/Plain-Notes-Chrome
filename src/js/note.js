@@ -38,8 +38,7 @@ async function loadPreferences () {
 }
 
 function registerListeners () {
-  const on = (id, event, handler) =>
-    document.getElementById(id).addEventListener(event, handler, false)
+  const on = (id, event, handler) => document.getElementById(id).addEventListener(event, handler, false)
 
   on('editor', 'input', onEditorInput)
   on('editor', 'keydown', onEditorKeydown)
