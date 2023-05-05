@@ -1,5 +1,8 @@
 # Plain Notes
 
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/jcbphfhggcmoffjgpblmcpllckcafbce)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/jcbphfhggcmoffjgpblmcpllckcafbce)
+
 Plain Notes is a Chrome extension that helps you take simple and uncomplicated, plain text notes without any unnecessary features or distractions.
 
 ## Installation
