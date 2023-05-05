@@ -43,5 +43,11 @@
   },
   "NEW_NOTE_MENU": {
     "message": "Новая заметка из текста"
+  },
+  "ACCELERATOR_NEW_NOTE": {
+    "message": "Ctrl+Й"
+  },
+  "ACCELERATOR_NEW_NOTE_MAC": {
+    "message": "\u2318Й"
   }
 }

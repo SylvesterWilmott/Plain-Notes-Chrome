@@ -35,15 +35,18 @@ function onDocumentKeydown (e) {
       search.blur()
     }
     navigateDirection(e)
-  } else if (e.key === 'Enter') {
-    if (search === document.activeElement) return
+  } else if (e.key === 'Enter' && search !== document.activeElement) {
     clickSelectedItem()
   } else if (e.key === 'Tab') {
     e.preventDefault()
-    search.focus()
     removeAllSelections()
+    search.focus()
   } else if ((e.key === 'Backspace' || e.key === 'Delete') && (e.metaKey || e.ctrlKey)) {
     deleteSelectedItem()
+  } else if (e.key === 'n' && (e.metaKey || e.ctrlKey)) {
+    e.preventDefault()
+    const newNoteAction = document.getElementById('newNoteButton')
+    newNoteAction.click()
   }
 }
 
@@ -67,7 +70,9 @@ function navigateDirection (e) {
 
   // Scroll to the top or bottom of the page if necessary
   if (navIndex <= 1) scrollToTop()
-  if (navIndex >= document.querySelectorAll('.nav-index').length - 1) { scrollToBottom() }
+  if (navIndex >= document.querySelectorAll('.nav-index').length - 1) {
+    scrollToBottom()
+  }
 
   const navItem = document.querySelectorAll('.nav-index')[navIndex]
   navItem.classList.add('selected')
@@ -124,7 +129,7 @@ async function deleteSelectedItem () {
 
   if (!confirm('Permanently delete this note?')) return
 
-  storedNotes = storedNotes.filter(note => note.id !== idOfSelected)
+  storedNotes = storedNotes.filter((note) => note.id !== idOfSelected)
 
   try {
     await Promise.all([

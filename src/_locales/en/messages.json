@@ -43,5 +43,11 @@
   },
   "NEW_NOTE_MENU": {
     "message": "New Note from Text"
+  },
+  "ACCELERATOR_NEW_NOTE": {
+    "message": "Ctrl+N"
+  },
+  "ACCELERATOR_NEW_NOTE_MAC": {
+    "message": "\u2318N"
   }
 }

@@ -43,5 +43,11 @@
   },
   "NEW_NOTE_MENU": {
     "message": "テキストから新しいノートを作成"
+  },
+  "ACCELERATOR_NEW_NOTE": {
+    "message": "Ctrl+ん"
+  },
+  "ACCELERATOR_NEW_NOTE_MAC": {
+    "message": "\u2318ン"
   }
 }

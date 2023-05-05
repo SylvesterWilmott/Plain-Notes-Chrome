@@ -56,9 +56,12 @@ body {
 }
 
 #notesList li,
-#actionList li,
-.input {
+#actionList li {
   padding: 0px 16px 0px 48px;
+}
+
+#searchList li {
+  padding: 0px 16px 0px 0;
 }
 
 .item {
@@ -73,13 +76,20 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 32px;
   width: 100%;
   font-size: 13px;
 }
 
-.item .title {
+.accelerator {
+  color: var(--secondary);
+  margin-left: 16px;
+  pointer-events: none;
+}
+
+.item .title,
+.label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,6 +106,7 @@ body {
   outline: none;
   background: transparent;
   border: none;
+  padding: 0px 0px 0px 48px;
 }
 
 .input::placeholder {
