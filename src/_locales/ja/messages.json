@@ -49,5 +49,16 @@
   },
   "ACCELERATOR_NEW_NOTE_MAC": {
     "message": "\u2318ン"
+  },
+  "DELETE_NOTE": {
+    "message": "メモを削除"
+  },
+  "DELETE_NOTE_CONFIRMATION": {
+    "message": "\"$note_title$\" というノートを完全に削除してもよろしいですか？",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

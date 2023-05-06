@@ -49,5 +49,16 @@
   },
   "ACCELERATOR_NEW_NOTE_MAC": {
     "message": "\u2318N"
+  },
+  "DELETE_NOTE": {
+    "message": "Borrar nota"
+  },
+  "DELETE_NOTE_CONFIRMATION": {
+    "message": "¿Está seguro(a) de que desea eliminar permanentemente la nota \"$note_title$\"?",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

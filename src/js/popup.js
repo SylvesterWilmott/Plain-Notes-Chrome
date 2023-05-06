@@ -75,11 +75,20 @@ export async function renderList (arr) {
 }
 
 function registerListeners () {
-  const on = (id, event, handler) => document.getElementById(id).addEventListener(event, handler, false)
+  const on = (target, event, handler) => {
+    if (typeof target === 'string') {
+      document.getElementById(target).addEventListener(event, handler, false)
+    } else {
+      target.addEventListener(event, handler, false)
+    }
+  }
 
   on('newNoteButton', 'click', onNewNoteButtonClicked)
   on('notesList', 'click', onNewNotesListClicked)
   on('search', 'input', onSearchInput)
+  on(document, 'contextmenu', onDocumentContextMenu)
+
+  chrome.runtime.onMessage.addListener(onMessageReceived)
 }
 
 async function onNewNoteButtonClicked () {
@@ -165,4 +174,35 @@ async function getSortedList (arr) {
   }
 
   return sorted
+}
+
+let contextMenuTarget
+
+function onDocumentContextMenu (e) {
+  // Prevent the context menu from being dsplayed while clicking on elements
+  // Other than notes and search input
+  if (!e.target.closest('#notesList > .item') && !e.target.matches('#search')) {
+    e.preventDefault()
+  } else {
+    // Keep track of which target was selected so that any actions are applied to the correct target
+    contextMenuTarget = e.target
+  }
+}
+
+async function onMessageReceived (message, sender, sendResponse) {
+  if (message.msg === 'deleteNote') {
+    sendResponse()
+
+    const id = contextMenuTarget.dataset.id
+
+    if (!id) return
+
+    try {
+      await navigation.deleteSelectedItem(id)
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
+
+    contextMenuTarget = null
+  }
 }
