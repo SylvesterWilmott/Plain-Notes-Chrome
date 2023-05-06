@@ -63,8 +63,8 @@ async function setupContextMenu () {
       title: chrome.i18n.getMessage('DELETE_NOTE'),
       contexts: ['page'],
       id: 'deleteNote',
-      documentUrlPatterns: [`${popupUrl}*`],
-    },
+      documentUrlPatterns: [`${popupUrl}*`]
+    }
   ]
 
   try {
