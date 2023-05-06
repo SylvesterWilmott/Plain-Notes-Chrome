@@ -118,7 +118,7 @@ function clickSelectedItem () {
   if (selectedItem) selectedItem.click()
 }
 
-async function deleteSelectedItem () {
+export async function deleteSelectedItem () {
   const selectedItem = document.querySelectorAll('.nav-index')[navIndex]
   const idOfSelected = selectedItem.dataset.id
   let storedNotes = await storage.load('notes', []).catch((error) => {
@@ -127,7 +127,7 @@ async function deleteSelectedItem () {
 
   if (!idOfSelected) return
 
-  if (!confirm('Permanently delete this note?')) return
+  if (!confirm(chrome.i18n.getMessage('DELETE_NOTE_CONFIRMATION'))) return
 
   storedNotes = storedNotes.filter((note) => note.id !== idOfSelected)
 

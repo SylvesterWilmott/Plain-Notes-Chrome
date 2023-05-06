@@ -5,6 +5,7 @@
 import * as storage from './js/storage.js'
 import * as menu from './js/menu.js'
 import * as uid from './js/uid.js'
+import * as message from './js/message.js'
 
 chrome.runtime.onInstalled.addListener(init)
 chrome.runtime.onStartup.addListener(loadPreferences)
@@ -23,6 +24,7 @@ async function init () {
 
 async function setupContextMenu () {
   const tabUrl = chrome.runtime.getURL('html/note.html')
+  const popupUrl = chrome.runtime.getURL('html/popup.html')
 
   const menuItems = [
     {
@@ -56,7 +58,13 @@ async function setupContextMenu () {
       title: chrome.i18n.getMessage('NEW_NOTE_MENU'),
       contexts: ['selection'],
       id: 'newNote'
-    }
+    },
+    {
+      title: chrome.i18n.getMessage('DELETE_NOTE'),
+      contexts: ['page'],
+      id: 'deleteNote',
+      documentUrlPatterns: [`${popupUrl}*`],
+    },
   ]
 
   try {
@@ -87,9 +95,7 @@ async function loadPreferences () {
 }
 
 async function onMenuClick (info) {
-  if (info.menuItemId === 'spellcheck' ||
-      info.menuItemId === 'autoClosure' ||
-      info.menuItemId === 'autoList') {
+  if (info.menuItemId === 'spellcheck' || info.menuItemId === 'autoClosure' || info.menuItemId === 'autoList') {
     try {
       await updateStoredPreferences(info)
     } catch (error) {
@@ -97,15 +103,17 @@ async function onMenuClick (info) {
     }
   } else if (info.menuItemId === 'newNote') {
     if (!info.selectionText) return
-
     let noteContent = info.selectionText
-
-    if (info.pageUrl) {
-      noteContent += `\n\n\u2014 ${info.pageUrl}`
-    }
+    if (info.pageUrl) noteContent += `\n\n\u2014 ${info.pageUrl}`
 
     try {
       await createNewNote(noteContent)
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
+  } else if (info.menuItemId === 'deleteNote') {
+    try {
+      await message.send({ msg: 'deleteNote' })
     } catch (error) {
       console.error('An error occurred:', error)
     }

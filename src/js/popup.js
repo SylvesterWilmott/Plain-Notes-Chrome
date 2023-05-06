@@ -75,11 +75,20 @@ export async function renderList (arr) {
 }
 
 function registerListeners () {
-  const on = (id, event, handler) => document.getElementById(id).addEventListener(event, handler, false)
+  const on = (target, event, handler) => {
+    if (typeof target === 'string') {
+      document.getElementById(target).addEventListener(event, handler, false);
+    } else {
+      target.addEventListener(event, handler, false);
+    }
+  };
 
   on('newNoteButton', 'click', onNewNoteButtonClicked)
   on('notesList', 'click', onNewNotesListClicked)
   on('search', 'input', onSearchInput)
+  on(document, 'contextmenu', onDocumentContextMenu)
+
+  chrome.runtime.onMessage.addListener(onMessageReceived)
 }
 
 async function onNewNoteButtonClicked () {
@@ -165,4 +174,21 @@ async function getSortedList (arr) {
   }
 
   return sorted
+}
+
+function onDocumentContextMenu(e) {
+  if (!e.target.closest("#notesList > .item") && !e.target.matches("#search")) {
+    e.preventDefault()
+  }
+}
+
+async function onMessageReceived(message, sender, sendResponse) {
+  if (message.msg === 'deleteNote') {
+    try {
+      sendResponse()
+      await navigation.deleteSelectedItem()
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
+  }
 }
