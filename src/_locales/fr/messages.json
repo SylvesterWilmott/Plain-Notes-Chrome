@@ -54,6 +54,11 @@
     "message": "Supprimer la note"
   },
   "DELETE_NOTE_CONFIRMATION": {
-    "message": "Supprimer définitivement cette note ?"
+    "message": "Êtes-vous sûr(e) de vouloir supprimer définitivement la note \"$note_title$\"?",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

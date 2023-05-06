@@ -54,6 +54,11 @@
     "message": "Удалить заметку"
   },
   "DELETE_NOTE_CONFIRMATION": {
-    "message": "Удалить эту заметку навсегда?"
+    "message": "Вы действительно хотите безвозвратно удалить заметку \"$note_title$\"?",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

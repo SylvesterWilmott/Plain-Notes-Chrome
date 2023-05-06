@@ -54,6 +54,11 @@
     "message": "Notiz löschen"
   },
   "DELETE_NOTE_CONFIRMATION": {
-    "message": "Diese Notiz dauerhaft löschen?"
+    "message": "Möchten Sie die Notiz \"$note_title$\" wirklich dauerhaft löschen?",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

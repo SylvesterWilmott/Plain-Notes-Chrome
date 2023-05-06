@@ -54,6 +54,11 @@
     "message": "メモを削除"
   },
   "DELETE_NOTE_CONFIRMATION": {
-    "message": "このメモを永久に削除しますか？"
+    "message": "\"$note_title$\" というノートを完全に削除してもよろしいですか？",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }

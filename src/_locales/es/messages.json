@@ -51,9 +51,14 @@
     "message": "\u2318N"
   },
   "DELETE_NOTE": {
-    "message": "Eliminar nota"
+    "message": "Borrar nota"
   },
   "DELETE_NOTE_CONFIRMATION": {
-    "message": "¿Eliminar esta nota permanentemente?"
+    "message": "¿Está seguro(a) de que desea eliminar permanentemente la nota \"$note_title$\"?",
+    "placeholders": {
+      "note_title": {
+        "content": "$1"
+      }
+    }
   }
 }
