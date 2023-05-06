@@ -1,6 +1,6 @@
 'use strict'
 
-/* global confirm */
+/* global chrome */
 
 import * as storage from './storage.js'
 import * as popup from './popup.js'
@@ -42,7 +42,9 @@ function onDocumentKeydown (e) {
     removeAllSelections()
     search.focus()
   } else if ((e.key === 'Backspace' || e.key === 'Delete') && (e.metaKey || e.ctrlKey)) {
-    deleteSelectedItem()
+    const selectedItem = document.querySelectorAll('.nav-index')[navIndex]
+    const id = selectedItem.dataset.id
+    deleteSelectedItem(id)
   } else if (e.key === 'n' && (e.metaKey || e.ctrlKey)) {
     e.preventDefault()
     const newNoteAction = document.getElementById('newNoteButton')
@@ -118,18 +120,16 @@ function clickSelectedItem () {
   if (selectedItem) selectedItem.click()
 }
 
-export async function deleteSelectedItem () {
-  const selectedItem = document.querySelectorAll('.nav-index')[navIndex]
-  const idOfSelected = selectedItem.dataset.id
+export async function deleteSelectedItem (id) {
   let storedNotes = await storage.load('notes', []).catch((error) => {
     console.error('An error occurred:', error)
   })
 
-  if (!idOfSelected) return
+  const note = storedNotes.find((note) => note.id === id)
 
-  if (!confirm(chrome.i18n.getMessage('DELETE_NOTE_CONFIRMATION'))) return
+  if (!window.confirm(`${chrome.i18n.getMessage('DELETE_NOTE_CONFIRMATION', note.title)}`)) return
 
-  storedNotes = storedNotes.filter((note) => note.id !== idOfSelected)
+  storedNotes = storedNotes.filter((note) => note.id !== id)
 
   try {
     await Promise.all([
