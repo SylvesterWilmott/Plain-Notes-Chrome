@@ -49,5 +49,11 @@
   },
   "ACCELERATOR_NEW_NOTE_MAC": {
     "message": "\u2318Й"
+  },
+  "DELETE_NOTE": {
+    "message": "Удалить заметку"
+  },
+  "DELETE_NOTE_CONFIRMATION": {
+    "message": "Удалить эту заметку навсегда?"
   }
 }

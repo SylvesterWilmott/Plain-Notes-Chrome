@@ -49,5 +49,11 @@
   },
   "ACCELERATOR_NEW_NOTE_MAC": {
     "message": "\u2318N"
+  },
+  "DELETE_NOTE": {
+    "message": "Notiz löschen"
+  },
+  "DELETE_NOTE_CONFIRMATION": {
+    "message": "Diese Notiz dauerhaft löschen?"
   }
 }
