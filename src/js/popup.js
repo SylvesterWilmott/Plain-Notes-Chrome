@@ -137,7 +137,6 @@ async function onSearchInput () {
 
   try {
     await renderList(filtered)
-    navigation.init()
     window.scrollTo(0, 0)
   } catch (error) {
     console.error('An error occurred:', error)
