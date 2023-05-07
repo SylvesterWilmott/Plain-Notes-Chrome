@@ -117,7 +117,8 @@ async function onNotesListClicked (e) {
 
 async function openTabWithNoteId (id) {
   try {
-    await tabs.create(`../html/note.html?id=${id}`)
+    const url = await chrome.runtime.getURL(`../html/note.html?id=${id}`)
+    await tabs.create(url)
   } catch (error) {
     console.error('An error occurred:', error)
   }
