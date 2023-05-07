@@ -84,7 +84,7 @@ function registerListeners () {
   }
 
   on('newNoteButton', 'click', onNewNoteButtonClicked)
-  on('notesList', 'click', onNewNotesListClicked)
+  on('notesList', 'click', onNotesListClicked)
   on('search', 'input', onSearchInput)
   on(document, 'contextmenu', onDocumentContextMenu)
 
@@ -101,7 +101,7 @@ async function onNewNoteButtonClicked () {
   }
 }
 
-async function onNewNotesListClicked (e) {
+async function onNotesListClicked (e) {
   const targetElement = e.target
 
   if (!('id' in targetElement.dataset)) return
