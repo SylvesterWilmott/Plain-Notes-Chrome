@@ -84,7 +84,7 @@ function registerListeners () {
   }
 
   on('newNoteButton', 'click', onNewNoteButtonClicked)
-  on('notesList', 'click', onNewNotesListClicked)
+  on('notesList', 'click', onNotesListClicked)
   on('search', 'input', onSearchInput)
   on(document, 'contextmenu', onDocumentContextMenu)
 
@@ -101,7 +101,7 @@ async function onNewNoteButtonClicked () {
   }
 }
 
-async function onNewNotesListClicked (e) {
+async function onNotesListClicked (e) {
   const targetElement = e.target
 
   if (!('id' in targetElement.dataset)) return
@@ -116,8 +116,10 @@ async function onNewNotesListClicked (e) {
 }
 
 async function openTabWithNoteId (id) {
+  const url = chrome.runtime.getURL(`../html/note.html?id=${id}`)
+  
   try {
-    await tabs.create(`../html/note.html?id=${id}`)
+    await tabs.create(url)
   } catch (error) {
     console.error('An error occurred:', error)
   }
@@ -137,7 +139,6 @@ async function onSearchInput () {
 
   try {
     await renderList(filtered)
-    navigation.init()
     window.scrollTo(0, 0)
   } catch (error) {
     console.error('An error occurred:', error)
