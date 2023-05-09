@@ -38,6 +38,12 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Autocomplete lists"
   },
+  "OPTION_AUTO_CLOSURE_MORE": {
+    "message": "Automatically add the closing quotation or bracket when you type the opening one."
+  },
+  "OPTIONS_AUTO_LIST_MORE": {
+    "message": "Automatically add new list items when you press enter while working on a list."
+  },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Export Notes"
   },
