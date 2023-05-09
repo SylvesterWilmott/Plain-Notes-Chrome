@@ -38,6 +38,12 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Autocompletar listas"
   },
+  "OPTION_AUTO_CLOSURE_MORE": {
+    "message": "Agregue automáticamente la comilla o el paréntesis de cierre cuando escriba el de apertura."
+  },
+  "OPTIONS_AUTO_LIST_MORE": {
+    "message": "Agregue automáticamente nuevos elementos a la lista cuando presione Enter mientras trabaja en una lista."
+  },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Exportar notas"
   },

@@ -38,6 +38,12 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Listen automatisch vervollständigen"
   },
+  "OPTION_AUTO_CLOSURE_MORE": {
+    "message": "Fügen Sie automatisch das schließende Anführungszeichen oder die Klammer ein, wenn Sie das öffnende eingeben."
+  },
+  "OPTIONS_AUTO_LIST_MORE": {
+    "message": "Fügen Sie automatisch neue Listenelemente hinzu, wenn Sie Enter drücken, während Sie an einer Liste arbeiten."
+  },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Notizen exportieren"
   },

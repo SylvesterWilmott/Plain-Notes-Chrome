@@ -38,6 +38,12 @@
   "OPTIONS_AUTO_LIST": {
     "message": "リストの自動補完"
   },
+  "OPTION_AUTO_CLOSURE_MORE": {
+    "message": "開き括弧を入力すると自動的に閉じ括弧や引用符を追加します。"
+  },
+  "OPTIONS_AUTO_LIST_MORE": {
+    "message": "リストを作業中にEnterキーを押すと、自動的に新しいリスト項目を追加します。"
+  },
   "OPTIONS_EXPORT_NOTES": {
     "message": "メモのエクスポート"
   },

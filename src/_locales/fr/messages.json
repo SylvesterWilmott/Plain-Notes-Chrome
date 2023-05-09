@@ -38,6 +38,12 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Autocompléter les listes"
   },
+  "OPTION_AUTO_CLOSURE_MORE": {
+    "message": "Ajouter automatiquement la fermeture de guillemet ou de parenthèse lorsque vous tapez l'ouverture."
+  },
+  "OPTIONS_AUTO_LIST_MORE": {
+    "message": "Ajouter automatiquement de nouveaux éléments à la liste lorsque vous appuyez sur Entrée pendant que vous travaillez sur une liste."
+  },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Exporter des notes"
   },
