@@ -8,25 +8,12 @@
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
     "Courier New", monospace;
   --primary: #824790;
-  --on-primary: #ffffff;
-  --primary-container: #FCD7FF;
-  --on-primary-container: #340042;
-  --secondary: #6A596C;
-  --primary-fixed-dim: #F3AFFF;
-  --on-secondary: #ffffff;
-  --secondary-container: #F3DBF2;
-  --on-secondary-container: #241727;
-  --surface: #FFF7FB;
-  --surface-container-highest: #E8E0E5;
-  --on-surface: #1E1B1E;
-  --on-surface-variant: #4C444C;
-  --outline: #7E747D;
   --neutral-primary: rgba(0, 0, 0, 0.87);
   --neutral-secondary: rgba(0, 0, 0, 0.61);
   --neutral-tertiary: rgba(0, 0, 0, 0.09);
   --neutral-quaternary: rgba(0, 0, 0, 0.05);
   --separator: rgba(0, 0, 0, 0.07);
-  --background: #ffffff;
+  --background: #f7f7f7;
   --background-elevated: #ffffff;
   --selection: #F2E4EF;
   --handle: #FFFFFF;
@@ -39,19 +26,6 @@
   :root {
     color-scheme: dark;
     --primary: #F3AFFF;
-    --on-primary: #4E155E;
-    --primary-container: #682E77;
-    --on-primary-container: #FCD7FF;
-    --secondary: #D6C0D6;
-    --primary-fixed-dim: #F3AFFF;
-    --on-secondary: #3A2B3C;
-    --secondary-container: #524154;
-    --on-secondary-container: #F3DBF2;
-    --surface: #3C383B; /* Surface bright */
-    --surface-container-highest: #383437;
-    --on-surface: #CCC4C9;
-    --on-surface-variant: #CFC3CD;
-    --outline: #988E97;
     --neutral-primary: rgba(255, 255, 255, 0.87);
     --neutral-secondary: rgba(255, 255, 255, 0.57);
     --neutral-tertiary: rgba(255, 255, 255, 0.14);
