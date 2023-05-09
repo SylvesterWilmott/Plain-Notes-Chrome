@@ -10,38 +10,58 @@
     <div class="container">
       <div class="row-group">
         <div class="row">
-          <label for="sorting" class="label" data-localize="OPTION_SORTING"></label>
-          <label class="select">
-            <select id="sorting">
-              <option value="created" data-localize="SORT_DATE_CREATED"></option>
-              <option value="modified" data-localize="SORT_DATE_MODIFIED"></option>
-              <option value="title" data-localize="SORT_TITLE"></option>
-            </select>
-          </label>
+          <div class="left-detail">
+            <label for="sorting" class="label" data-localize="OPTION_SORTING"></label>
+          </div>
+          <div class="right-detail">
+            <label class="select">
+              <select id="sorting">
+                <option value="created" data-localize="SORT_DATE_CREATED"></option>
+                <option value="modified" data-localize="SORT_DATE_MODIFIED"></option>
+                <option value="title" data-localize="SORT_TITLE"></option>
+              </select>
+            </label>
+          </div>
         </div>
         <div class="row">
-          <label for="spellcheck" class="label" data-localize="OPTION_SPELLCHECK"></label>
-          <label class="switch">
-            <input type="checkbox" id="spellcheck">
-            <span class="track no-transition"></span>
-          </label>
+          <div class="left-detail">
+            <label for="spellcheck" class="label" data-localize="OPTION_SPELLCHECK"></label>
+          </div>
+          <div class="right-detail">
+            <label class="switch">
+              <input type="checkbox" id="spellcheck">
+              <span class="track no-transition"></span>
+            </label>
+          </div>
         </div>
         <div class="row">
-          <label for="autoClosure" class="label" data-localize="OPTION_AUTO_CLOSURE"></label>
-          <label class="switch">
-            <input type="checkbox" id="autoClosure">
-            <span class="track no-transition"></span>
-          </label>
+          <div class="left-detail">
+            <label for="autoClosure" class="label" data-localize="OPTION_AUTO_CLOSURE"></label>
+            <p data-localize="OPTION_AUTO_CLOSURE_MORE"></p>
+          </div>
+          <div class="right-detail">
+            <label class="switch">
+              <input type="checkbox" id="autoClosure">
+              <span class="track no-transition"></span>
+            </label>
+          </div>
         </div>
         <div class="row">
-          <label for="autoList" class="label" data-localize="OPTIONS_AUTO_LIST"></label>
-          <label class="switch">
-            <input type="checkbox" id="autoList">
-            <span class="track no-transition"></span>
-          </label>
+          <div class="left-detail">
+            <label for="autoList" class="label" data-localize="OPTIONS_AUTO_LIST"></label>
+            <p data-localize="OPTIONS_AUTO_LIST_MORE"></p>
+          </div>
+          <div class="right-detail">
+            <label class="switch">
+              <input type="checkbox" id="autoList">
+              <span class="track no-transition"></span>
+            </label>
+          </div>
         </div>
         <div class="row">
-          <button class="label action" id="export">Export Notes</button>
+          <div class="left-detail">
+            <button class="label action" id="export">Export Notes</button>
+          </div>
         </div>
       </div>
     </div>
