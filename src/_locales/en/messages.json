@@ -17,6 +17,15 @@
   "UNTITLED_NOTE": {
     "message": "Untitled"
   },
+  "OPTIONS": {
+    "message": "Options"
+  },
+  "NOTES": {
+    "message": "Notes"
+  },
+  "EDITOR": {
+    "message": "Editor"
+  },
   "OPTION_SORTING": {
     "message": "Sort Notes By"
   },
