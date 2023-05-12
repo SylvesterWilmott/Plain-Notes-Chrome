@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "Senza titolo"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "Opzioni"
+  },
+  "NOTES": {
+    "message": "Note"
+  },
+  "EDITOR": {
+    "message": "Editor"
+  },
+  "EXTENSION": {
+    "message": "Estensione"
+  },
+  "RATE": {
+    "message": "Valuta Plain Notes"
+  },
+  "OPTIONS_SORTING": {
     "message": "Ordina note per"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Titolo"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Correttore ortografico"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Completamento automatico di virgolette e parentesi"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Completamento automatico di elenchi"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Aggiungi automaticamente la parentesi di chiusura o la virgoletta quando digiti quella di apertura."
   },
   "OPTIONS_AUTO_LIST_MORE": {

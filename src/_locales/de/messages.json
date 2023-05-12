@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "Ohne Titel"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "Optionen"
+  },
+  "NOTES": {
+    "message": "Notizen"
+  },
+  "EDITOR": {
+    "message": "Editor"
+  },
+  "EXTENSION": {
+    "message": "Erweiterung"
+  },
+  "RATE": {
+    "message": "Plain Notes bewerten"
+  },
+  "OPTIONS_SORTING": {
     "message": "Sortieren nach"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Titel"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Rechtschreibprüfung"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Anführungszeichen und Klammern automatisch vervollständigen"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Listen automatisch vervollständigen"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Fügen Sie automatisch das schließende Anführungszeichen oder die Klammer ein, wenn Sie das öffnende eingeben."
   },
   "OPTIONS_AUTO_LIST_MORE": {

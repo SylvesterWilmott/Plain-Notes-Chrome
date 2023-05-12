@@ -28,14 +28,14 @@ async function setupContextMenu () {
 
   const menuItems = [
     {
-      title: chrome.i18n.getMessage('OPTION_SPELLCHECK'),
+      title: chrome.i18n.getMessage('OPTIONS_SPELLCHECK'),
       contexts: ['editable'],
       id: 'spellcheck',
       documentUrlPatterns: [`${tabUrl}*`],
       type: 'checkbox'
     },
     {
-      title: chrome.i18n.getMessage('OPTION_AUTO_CLOSURE'),
+      title: chrome.i18n.getMessage('OPTIONS_AUTO_CLOSURE'),
       contexts: ['editable'],
       id: 'autoClosure',
       documentUrlPatterns: [`${tabUrl}*`],

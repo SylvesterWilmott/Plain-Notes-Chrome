@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "Без названия"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "Опции"
+  },
+  "NOTES": {
+    "message": "Заметки"
+  },
+  "EDITOR": {
+    "message": "Редактор"
+  },
+  "EXTENSION": {
+    "message": "Расширение"
+  },
+  "RATE": {
+    "message": "Оценить Plain Notes"
+  },
+  "OPTIONS_SORTING": {
     "message": "Сортировать заметки по"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Заголовку"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Проверка орфографии"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Автозавершение кавычек и скобок"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Автозавершение списков"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Автоматически добавлять закрывающую кавычку или скобку при вводе открывающей."
   },
   "OPTIONS_AUTO_LIST_MORE": {

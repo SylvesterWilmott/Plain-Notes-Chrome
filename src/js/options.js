@@ -1,7 +1,10 @@
 'use strict'
 
+/* global chrome */
+
 import * as storage from './storage.js'
 import * as i18n from './localize.js'
+import * as tabs from './tabs.js'
 
 document.addEventListener('DOMContentLoaded', init)
 
@@ -142,12 +145,20 @@ async function onButtonClicked (e) {
       console.log(note)
       const title = note.title.replace(/\s+/g, '_')
       const created = new Date(note.created)
-      const date = created.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '_')
+      const date = created
+        .toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        })
+        .replace(/\//g, '_')
       const filename = `${title}_${date}`
       const content = note.text
 
       // create a data URL from the file content
-      const dataURL = `data:text/plain;charset=utf-8,${encodeURIComponent(content)}`
+      const dataURL = `data:text/plain;charset=utf-8,${encodeURIComponent(
+        content
+      )}`
 
       // create a temporary anchor element to trigger the download
       const link = document.createElement('a')
@@ -160,6 +171,13 @@ async function onButtonClicked (e) {
 
       // remove the anchor element from the document body
       document.body.removeChild(link)
+    }
+  } else if (targetId === 'rate') {
+    try {
+      const url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
+      await tabs.create(url)
+    } catch (error) {
+      console.error('An error occurred:', error)
     }
   }
 }

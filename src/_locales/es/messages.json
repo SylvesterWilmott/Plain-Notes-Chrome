@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "Sin título"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "Opciones"
+  },
+  "NOTES": {
+    "message": "Notas"
+  },
+  "EDITOR": {
+    "message": "Editor"
+  },
+  "EXTENSION": {
+    "message": "Extensión"
+  },
+  "RATE": {
+    "message": "Calificar Plain Notes"
+  },
+  "OPTIONS_SORTING": {
     "message": "Ordenar Notas Por"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Título"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Corrector Ortográfico"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Autocompletar comillas y corchetes"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Autocompletar listas"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Agregue automáticamente la comilla o el paréntesis de cierre cuando escriba el de apertura."
   },
   "OPTIONS_AUTO_LIST_MORE": {
