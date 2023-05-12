@@ -84,6 +84,10 @@ body {
   pointer-events: none;
 }
 
+.item.selected .accelerator {
+  color: var(--neutral-primary);
+}
+
 .item .title,
 .label {
   white-space: nowrap;

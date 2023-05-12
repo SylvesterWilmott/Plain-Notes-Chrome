@@ -7,11 +7,13 @@
     <script type="module" src="../js/options.js"></script>
   </head>
   <body class="hidden">
-    <div class="container">
-      <div class="row-group">
-        <div class="row">
+    <div class="options">
+      <h1 data-localize="OPTIONS"></h1>
+      <h2 class="heading" data-localize="NOTES"></h2>
+      <div class="container">
+        <div class="row row-single">
           <div class="left-detail">
-            <label for="sorting" class="label" data-localize="OPTION_SORTING"></label>
+            <p class="label" data-localize="OPTION_SORTING"></p>
           </div>
           <div class="right-detail">
             <label class="select">
@@ -23,9 +25,17 @@
             </label>
           </div>
         </div>
-        <div class="row">
+        <label for="export" class="row row-single">
           <div class="left-detail">
-            <label for="spellcheck" class="label" data-localize="OPTION_SPELLCHECK"></label>
+            <button id="export" data-localize="OPTIONS_EXPORT_NOTES"></button>
+          </div>
+        </div>
+      </label>
+      <h2 class="heading" data-localize="EDITOR"></h2>
+      <div class="container">
+        <label for="spellcheck" class="row row-single">
+          <div class="left-detail">
+            <p class="label" data-localize="OPTION_SPELLCHECK"></p>
           </div>
           <div class="right-detail">
             <label class="switch">
@@ -33,11 +43,11 @@
               <span class="track no-transition"></span>
             </label>
           </div>
-        </div>
-        <div class="row">
+        </label>
+        <label for="autoClosure" class="row row-multiple">
           <div class="left-detail">
-            <label for="autoClosure" class="label" data-localize="OPTION_AUTO_CLOSURE"></label>
-            <p data-localize="OPTION_AUTO_CLOSURE_MORE"></p>
+            <p class="label" data-localize="OPTION_AUTO_CLOSURE"></p>
+            <p class="subtitle" data-localize="OPTION_AUTO_CLOSURE_MORE"></p>
           </div>
           <div class="right-detail">
             <label class="switch">
@@ -45,11 +55,11 @@
               <span class="track no-transition"></span>
             </label>
           </div>
-        </div>
-        <div class="row">
+        </label>
+        <label for="autoList" class="row row-multiple">
           <div class="left-detail">
-            <label for="autoList" class="label" data-localize="OPTIONS_AUTO_LIST"></label>
-            <p data-localize="OPTIONS_AUTO_LIST_MORE"></p>
+            <p class="label" data-localize="OPTIONS_AUTO_LIST"></p>
+            <p class="subtitle" data-localize="OPTIONS_AUTO_LIST_MORE"></p>
           </div>
           <div class="right-detail">
             <label class="switch">
@@ -57,12 +67,7 @@
               <span class="track no-transition"></span>
             </label>
           </div>
-        </div>
-        <div class="row">
-          <div class="left-detail">
-            <button class="label action" id="export">Export Notes</button>
-          </div>
-        </div>
+        </label>
       </div>
     </div>
   </body>
