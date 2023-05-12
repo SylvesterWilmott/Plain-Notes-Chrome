@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "Sans titre"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "Options"
+  },
+  "NOTES": {
+    "message": "Notes"
+  },
+  "EDITOR": {
+    "message": "Éditeur"
+  },
+  "EXTENSION": {
+    "message": "Extension"
+  },
+  "RATE": {
+    "message": "Noter Plain Notes"
+  },
+  "OPTIONS_SORTING": {
     "message": "Trier les notes par"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Titre"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Vérification orthographique"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Autocompléter les guillemets et les crochets"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Autocompléter les listes"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Ajouter automatiquement la fermeture de guillemet ou de parenthèse lorsque vous tapez l'ouverture."
   },
   "OPTIONS_AUTO_LIST_MORE": {

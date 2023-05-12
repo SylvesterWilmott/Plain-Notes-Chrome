@@ -17,7 +17,22 @@
   "UNTITLED_NOTE": {
     "message": "無題"
   },
-  "OPTION_SORTING": {
+  "OPTIONS": {
+    "message": "オプション"
+  },
+  "NOTES": {
+    "message": "メモ"
+  },
+  "EDITOR": {
+    "message": "エディター"
+  },
+  "EXTENSION": {
+    "message": "拡張機能"
+  },
+  "RATE": {
+    "message": "Plain Notes を評価する"
+  },
+  "OPTIONS_SORTING": {
     "message": "ノートの並べ替え"
   },
   "SORT_DATE_CREATED": {
@@ -29,16 +44,16 @@
   "SORT_TITLE": {
     "message": "タイトル"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "スペルチェック"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "引用符や括弧の自動補完"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "リストの自動補完"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "開き括弧を入力すると自動的に閉じ括弧や引用符を追加します。"
   },
   "OPTIONS_AUTO_LIST_MORE": {

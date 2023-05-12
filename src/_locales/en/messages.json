@@ -26,7 +26,13 @@
   "EDITOR": {
     "message": "Editor"
   },
-  "OPTION_SORTING": {
+  "EXTENSION": {
+    "message": "Extension"
+  },
+  "RATE": {
+    "message": "Rate Plain Notes"
+  },
+  "OPTIONS_SORTING": {
     "message": "Sort Notes By"
   },
   "SORT_DATE_CREATED": {
@@ -38,16 +44,16 @@
   "SORT_TITLE": {
     "message": "Title"
   },
-  "OPTION_SPELLCHECK": {
+  "OPTIONS_SPELLCHECK": {
     "message": "Spellcheck"
   },
-  "OPTION_AUTO_CLOSURE": {
+  "OPTIONS_AUTO_CLOSURE": {
     "message": "Autocomplete quotes and brackets"
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Autocomplete lists"
   },
-  "OPTION_AUTO_CLOSURE_MORE": {
+  "OPTIONS_AUTO_CLOSURE_MORE": {
     "message": "Automatically add the closing quotation or bracket when you type the opening one."
   },
   "OPTIONS_AUTO_LIST_MORE": {
