@@ -157,8 +157,9 @@ async function onButtonClicked (e) {
       console.error('An error occurred:', error)
     })
 
+    if (notes.length === 0) return
+
     for (const note of notes) {
-      console.log(note)
       const title = note.title.replace(/\s+/g, '_')
       const created = new Date(note.created)
       const date = created
