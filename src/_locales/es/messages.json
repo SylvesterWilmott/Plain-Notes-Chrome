@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Calificar Plain Notes"
   },
+  "SHORTCUT": {
+    "message": "Atajo"
+  },
   "OPTIONS_SORTING": {
     "message": "Ordenar Notas Por"
   },

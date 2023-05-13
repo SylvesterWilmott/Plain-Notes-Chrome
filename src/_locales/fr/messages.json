@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Noter Plain Notes"
   },
+  "SHORTCUT": {
+    "message": "Raccourci"
+  },
   "OPTIONS_SORTING": {
     "message": "Trier les notes par"
   },

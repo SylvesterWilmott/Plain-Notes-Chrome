@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Оценить Plain Notes"
   },
+  "SHORTCUT": {
+    "message": "Ярлык"
+  },
   "OPTIONS_SORTING": {
     "message": "Сортировать заметки по"
   },
