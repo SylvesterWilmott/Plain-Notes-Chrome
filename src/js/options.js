@@ -21,6 +21,12 @@ async function init () {
 }
 
 function setupDocument () {
+  if (isEdge()) {
+    document.body.classList.add('edge')
+  } else {
+    document.body.classList.add('chrome')
+  }
+
   const animatedElements = document.querySelectorAll('.no-transition')
 
   for (const el of animatedElements) {
@@ -62,6 +68,18 @@ function registerListeners () {
 
   for (const button of buttons) {
     button.addEventListener('click', onButtonClicked)
+  }
+
+  chrome.storage.onChanged.addListener(onStorageChanged)
+}
+
+async function onStorageChanged (changes) {
+  if (changes.preferences) {
+    try {
+      await loadPreferences()
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
   }
 }
 
@@ -173,11 +191,27 @@ async function onButtonClicked (e) {
       document.body.removeChild(link)
     }
   } else if (targetId === 'rate') {
+    let url
+
+    if (isEdge()) {
+      url = `https://microsoftedge.microsoft.com/addons/detail/${chrome.runtime.id}/ratings-and-reviews`
+    } else {
+      url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
+    }
+
     try {
-      const url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
       await tabs.create(url)
     } catch (error) {
       console.error('An error occurred:', error)
     }
   }
+}
+
+function isEdge () {
+  for (const agent of navigator.userAgentData.brands) {
+    if (agent.brand === 'Microsoft Edge') {
+      return true
+    }
+  }
+  return false
 }
