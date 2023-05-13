@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Plain Notes を評価する"
   },
+  "SHORTCUT": {
+    "message": "ショートカット"
+  },
   "OPTIONS_SORTING": {
     "message": "ノートの並べ替え"
   },

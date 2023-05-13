@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Plain Notes bewerten"
   },
+  "SHORTCUT": {
+    "message": "Verknüpfung"
+  },
   "OPTIONS_SORTING": {
     "message": "Sortieren nach"
   },

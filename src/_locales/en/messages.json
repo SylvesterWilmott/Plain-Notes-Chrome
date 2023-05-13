@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Rate Plain Notes"
   },
+  "SHORTCUT": {
+    "message": "Shortcut"
+  },
   "OPTIONS_SORTING": {
     "message": "Sort Notes By"
   },

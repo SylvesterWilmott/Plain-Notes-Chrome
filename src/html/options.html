@@ -27,7 +27,7 @@
         </div>
         <label for="export" class="row row-single">
           <div class="left-detail">
-            <button id="export" data-localize="OPTIONS_EXPORT_NOTES"></button>
+            <button id="export" class="action-primary" data-localize="OPTIONS_EXPORT_NOTES"></button>
           </div>
         </label>
       </div>
@@ -71,7 +71,15 @@
       </div>
       <h2 class="heading" data-localize="EXTENSION"></h2>
       <div class="container">
-        <label class="row row-single">
+        <label for="shortcut" class="row row-single">
+          <div class="left-detail">
+            <button id="shortcut" data-localize="SHORTCUT"></button>
+          </div>
+          <div class="right-detail">
+            <div class="external"></div>
+          </div>
+        </label>
+        <label for="rate" class="row row-single">
           <div class="left-detail">
             <button id="rate" data-localize="RATE"></button>
           </div>
@@ -80,6 +88,7 @@
           </div>
         </label>
       </div>
+      <p id="version" class="version"></p>
     </div>
   </body>
 </html>

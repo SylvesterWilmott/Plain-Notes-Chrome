@@ -32,6 +32,9 @@
   "RATE": {
     "message": "Valuta Plain Notes"
   },
+  "SHORTCUT": {
+    "message": "Scorciatoia"
+  },
   "OPTIONS_SORTING": {
     "message": "Ordina note per"
   },
