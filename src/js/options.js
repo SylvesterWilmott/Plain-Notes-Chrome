@@ -42,10 +42,6 @@ function setupDocument () {
     el.classList.remove('no-transition')
   }
 
-  const versionElement = document.getElementById('version')
-  const version = `v${chrome.runtime.getManifest().version}`
-  versionElement.innerText = version
-
   document.body.classList.remove('hidden')
 }
 
@@ -191,14 +187,6 @@ async function onButtonClicked (e) {
     }
   } else if (targetId === 'rate') {
     let url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
-
-    try {
-      await tabs.create(url)
-    } catch (error) {
-      console.error('An error occurred:', error)
-    }
-  } else if (targetId === 'shortcut') {
-    let url = 'chrome://extensions/shortcuts'
 
     try {
       await tabs.create(url)

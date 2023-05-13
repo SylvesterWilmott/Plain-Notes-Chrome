@@ -17,18 +17,6 @@
   "UNTITLED_NOTE": {
     "message": "Untitled"
   },
-  "OPTIONS": {
-    "message": "Options"
-  },
-  "NOTES": {
-    "message": "Notes"
-  },
-  "EDITOR": {
-    "message": "Editor"
-  },
-  "EXTENSION": {
-    "message": "Extension"
-  },
   "RATE": {
     "message": "Rate Plain Notes"
   },
@@ -36,13 +24,13 @@
     "message": "Shortcut"
   },
   "OPTIONS_SORTING": {
-    "message": "Sort Notes By"
+    "message": "Sort notes by"
   },
   "SORT_DATE_CREATED": {
-    "message": "Date Created"
+    "message": "Date created"
   },
   "SORT_DATE_MODIFIED": {
-    "message": "Date Modified"
+    "message": "Date modified"
   },
   "SORT_TITLE": {
     "message": "Title"
@@ -56,14 +44,8 @@
   "OPTIONS_AUTO_LIST": {
     "message": "Autocomplete lists"
   },
-  "OPTIONS_AUTO_CLOSURE_MORE": {
-    "message": "Automatically add the closing quotation or bracket when you type the opening one."
-  },
-  "OPTIONS_AUTO_LIST_MORE": {
-    "message": "Automatically add new list items when you press enter while working on a list."
-  },
   "OPTIONS_EXPORT_NOTES": {
-    "message": "Export Notes"
+    "message": "Export notes"
   },
   "NEW_NOTE_MENU": {
     "message": "New Note from Text"

@@ -8,8 +8,6 @@
   </head>
   <body class="hidden">
     <div class="options">
-      <h1 data-localize="OPTIONS"></h1>
-      <h2 class="heading" data-localize="NOTES"></h2>
       <div class="container">
         <div class="row row-single">
           <div class="left-detail">
@@ -25,14 +23,6 @@
             </label>
           </div>
         </div>
-        <label for="export" class="row row-single">
-          <div class="left-detail">
-            <button id="export" class="action-primary" data-localize="OPTIONS_EXPORT_NOTES"></button>
-          </div>
-        </label>
-      </div>
-      <h2 class="heading" data-localize="EDITOR"></h2>
-      <div class="container">
         <label for="spellcheck" class="row row-single">
           <div class="left-detail">
             <p class="label" data-localize="OPTIONS_SPELLCHECK"></p>
@@ -44,10 +34,9 @@
             </label>
           </div>
         </label>
-        <label for="autoClosure" class="row row-multiple">
+        <label for="autoClosure" class="row row-single">
           <div class="left-detail">
             <p class="label" data-localize="OPTIONS_AUTO_CLOSURE"></p>
-            <p class="subtitle" data-localize="OPTIONS_AUTO_CLOSURE_MORE"></p>
           </div>
           <div class="right-detail">
             <label class="switch">
@@ -56,10 +45,9 @@
             </label>
           </div>
         </label>
-        <label for="autoList" class="row row-multiple">
+        <label for="autoList" class="row row-single">
           <div class="left-detail">
             <p class="label" data-localize="OPTIONS_AUTO_LIST"></p>
-            <p class="subtitle" data-localize="OPTIONS_AUTO_LIST_MORE"></p>
           </div>
           <div class="right-detail">
             <label class="switch">
@@ -68,15 +56,9 @@
             </label>
           </div>
         </label>
-      </div>
-      <h2 class="heading" data-localize="EXTENSION"></h2>
-      <div class="container">
-        <label for="shortcut" class="row row-single">
+        <label for="export" class="row row-single">
           <div class="left-detail">
-            <button id="shortcut" data-localize="SHORTCUT"></button>
-          </div>
-          <div class="right-detail">
-            <div class="external"></div>
+            <button id="export" class="action-primary" data-localize="OPTIONS_EXPORT_NOTES"></button>
           </div>
         </label>
         <label for="rate" class="row row-single">
@@ -88,7 +70,6 @@
           </div>
         </label>
       </div>
-      <p id="version" class="version"></p>
     </div>
   </body>
 </html>
