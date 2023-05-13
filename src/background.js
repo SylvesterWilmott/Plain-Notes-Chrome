@@ -15,11 +15,10 @@ chrome.storage.onChanged.addListener(onStorageChanged)
 async function init () {
   try {
     await setupContextMenu()
+    await loadPreferences()
   } catch (error) {
     console.error('An error occurred:', error)
   }
-
-  loadPreferences()
 }
 
 async function setupContextMenu () {
@@ -142,7 +141,11 @@ async function updateStoredPreferences (info) {
 
 async function onStorageChanged (changes) {
   if (changes.preferences) {
-    loadPreferences()
+    try {
+      await loadPreferences()
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
   }
 }
 
