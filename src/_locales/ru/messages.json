@@ -17,18 +17,6 @@
   "UNTITLED_NOTE": {
     "message": "Без названия"
   },
-  "OPTIONS": {
-    "message": "Опции"
-  },
-  "NOTES": {
-    "message": "Заметки"
-  },
-  "EDITOR": {
-    "message": "Редактор"
-  },
-  "EXTENSION": {
-    "message": "Расширение"
-  },
   "RATE": {
     "message": "Оценить Plain Notes"
   },
@@ -55,12 +43,6 @@
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Автозавершение списков"
-  },
-  "OPTIONS_AUTO_CLOSURE_MORE": {
-    "message": "Автоматически добавлять закрывающую кавычку или скобку при вводе открывающей."
-  },
-  "OPTIONS_AUTO_LIST_MORE": {
-    "message": "Автоматически добавлять новые элементы списка при нажатии Enter во время работы со списком."
   },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Экспорт заметок"

@@ -17,18 +17,6 @@
   "UNTITLED_NOTE": {
     "message": "Senza titolo"
   },
-  "OPTIONS": {
-    "message": "Opzioni"
-  },
-  "NOTES": {
-    "message": "Note"
-  },
-  "EDITOR": {
-    "message": "Editor"
-  },
-  "EXTENSION": {
-    "message": "Estensione"
-  },
   "RATE": {
     "message": "Valuta Plain Notes"
   },
@@ -55,12 +43,6 @@
   },
   "OPTIONS_AUTO_LIST": {
     "message": "Completamento automatico di elenchi"
-  },
-  "OPTIONS_AUTO_CLOSURE_MORE": {
-    "message": "Aggiungi automaticamente la parentesi di chiusura o la virgoletta quando digiti quella di apertura."
-  },
-  "OPTIONS_AUTO_LIST_MORE": {
-    "message": "Aggiungi automaticamente nuovi elementi alla lista quando premi Invio mentre lavori su una lista."
   },
   "OPTIONS_EXPORT_NOTES": {
     "message": "Esporta note"
