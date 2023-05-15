@@ -186,7 +186,7 @@ async function onButtonClicked (e) {
       document.body.removeChild(link)
     }
   } else if (targetId === 'rate') {
-    let url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
+    const url = `https://chrome.google.com/webstore/detail/${chrome.runtime.id}/reviews`
 
     try {
       await tabs.create(url)
