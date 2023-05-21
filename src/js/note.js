@@ -142,12 +142,13 @@ async function onStorageChanged (changes) {
 
   if (changes.notes && !document.hasFocus()) {
     const { newValue, oldValue } = changes.notes
-    const note = newValue?.find((n) => n.id === noteId)
+    const noteOldValue = oldValue?.find((n) => n.id === noteId)
+    const noteNewValue = newValue?.find((n) => n.id === noteId)
 
-    if (note && (!oldValue || oldValue.text !== note.text)) {
-      editor.value = note.text
-      editor.selectionEnd = note.caret
-      document.title = note.title
+    if (noteNewValue && (!noteOldValue || noteOldValue.text !== noteNewValue.text)) {
+      editor.value = noteNewValue.text
+      editor.selectionEnd = noteNewValue.caret
+      document.title = noteNewValue.title
     }
   }
 
